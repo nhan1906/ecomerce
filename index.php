@@ -9,10 +9,16 @@ include 'includes/meta.php';
 
 	<!-- Navigation -->
 	<!-- Show product-->
+	<?php
+    include 'includes/all_products.php';?>
 	<!-- Modal -->
 	<!-- Contact -->
 	<!-- Footer -->
 
+    <!--Bottom hoed phone-->
+    <?php
+    include 'includes/bottom_hotline.php';
+    ?>
 
 	<!-- Bottom pages -->
 	<script src="js/javascript.js"></script>

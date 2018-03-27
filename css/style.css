@@ -1,3 +1,133 @@
-* {
-	background-color: blue;
+body {
+  background-color: green;
+}
+
+/* Styling bottom hoed phone*/
+.bottom_hoed{
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  padding-top: 4px;
+  padding-bottom: 3px;
+  z-index: 9999;
+  bottom: 0;
+  
+}
+
+.bottom_hotline{
+
+  display: table;
+  margin: auto;
+  width: 200px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #73aed5;
+  border: solid 1px #73aed5;
+  line-height: 18px;
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,.5);
+  box-shadow: 0 0 5px rgba(0,0,0,.5);
+  float: right;
+  margin-right: 320px;
+}
+
+.sdt_hot{
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.tuvan_hot{
+  font-size: 12px;
+  color: #fff;
+  padding-top: 4px;
+}
+
+.bottom_iconphone{
+  float: left;
+  width: 40px;
+  padding-left: 10px;padding-top: 4px;
+}
+/*End styling bottom hoed */
+
+/* Remove rounded borders from list */
+.list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Remove border and add padding to thumbnails */
+.thumbnail {
+    padding: 5px 5px 15px 5px;
+    border: 1px #E8E8E8 solid;
+    border-radius: 0;
+}
+
+.thumbnail:hover{
+    padding: 5px 5px 15px 5px;
+    border: 1px orange solid;
+    border-radius: 0;
+}
+
+.thumbnail p {
+    margin-top: 5px;
+    color: #555;
+}
+
+/* Black buttons with extra padding and without rounded borders */
+.btn {
+    padding: 4px 30px;
+    background-color: orange;
+    color: #fff;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+/* On hover, the color of .btn will transition to white with black text */
+.btn:hover, .btn:focus {
+    border: 1px solid orange;
+    background-color: #fff;
+    color: #000;
+}
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
 }
