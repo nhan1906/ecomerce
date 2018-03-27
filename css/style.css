@@ -2,6 +2,11 @@ body {
   background-color: green;
 }
 
+footer div.container {
+  padding: 20px 40px;
+  margin: 100px;
+}
+
 /* Styling bottom hoed phone*/
 .bottom_hoed{
   width: 100%;

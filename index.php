@@ -18,7 +18,7 @@ include 'includes/meta.php';
     <!--Bottom hoed phone-->
     <?php
     include 'includes/bottom_hotline.php';
-    ?>
+    include 'includes/footer.php';?>
 
 	<!-- Bottom pages -->
 	<script src="js/javascript.js"></script>

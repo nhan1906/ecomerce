@@ -78,48 +78,6 @@
 }
 
 
-/*********END box_product*********/
-
-/* Remove rounded borders from list */
-.list-group-item:first-child {
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-}
-
-.list-group-item:last-child {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-/* Remove border and add padding to thumbnails */
-.thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-}
-
-.thumbnail p {
-    margin-top: 15px;
-    color: #555;
-}
-
-/* Black buttons with extra padding and without rounded borders */
-.btn {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #f1f1f1;
-    border-radius: 0;
-    transition: .2s;
-}
-
-/* On hover, the color of .btn will transition to white with black text */
-.btn:hover, .btn:focus {
-    border: 1px solid #333;
-    background-color: #fff;
-    color: #000;
-}
-
-
 
 	</style>
 </head>
@@ -134,48 +92,5 @@
         
     </div>
 
-    <div class="row text-center">
-  <div class="col-sm-4">
-    <div class="thumbnail">
-      <img src="paris.jpg" alt="Paris">
-      <p><strong>Paris</strong></p>
-      <p>Fri. 27 November 2015</p>
-      <button class="btn">Buy Tickets</button>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="thumbnail">
-      <img src="newyork.jpg" alt="New York">
-      <p><strong>New York</strong></p>
-      <p>Sat. 28 November 2015</p>
-      <button class="btn">Buy Tickets</button>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="thumbnail">
-      <img src="sanfran.jpg" alt="San Francisco">
-      <p><strong>San Francisco</strong></p>
-      <p>Sun. 29 November 2015</p>
-      <button class="btn">Buy Tickets</button>
-    </div>
-  </div>
-</div>
-
-<div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>Sản phẩm của Coconut</h2><br>
-  <div class="row text-center slideanim">
-    <?php while($product = mysqli_fetch_assoc($products)) : ?>
-      <div class="col-sm-3 col-md-3">
-        <div class="thumbnail">
-          <img src="images/paris.jpg" alt="Paris">
-          <p><strong><?php echo "Nhẫn " . $product["name"]?></strong></p>
-          <p>Fri. 27 November 2015</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
-        </div>
-      </div>
-    <?php endwhile; ?>
-  
-  </div><br>
-</div>
 </body>
 </html>
